@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find community services, local organizations, programs, and events around Alpharetta and Cumming, Georgia.">
+  <title>CommonGround | Your Community, Connected</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/commonground-tree-logo.png" alt="" width="36" height="36"><span class="brand-wordmark">Common<span>Ground</span></span></a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="resources.html">Explore</a>
+        <a href="events.html">Events</a>
+        <a href="saved.html">Saved</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-modern">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR COMMUNITY, CONNECTED</p>
+          <h1>Find what you need.<br><span>Discover what's possible.</span></h1>
+          <p class="hero-description">
+            A simpler way to explore local support, organizations,
+            programs, and events around Alpharetta and Cumming.
+          </p>
+
+          <form id="home-search" class="search-form" role="search">
+            <label class="sr-only" for="home-query">Search community resources</label>
+            <span class="search-symbol" aria-hidden="true">⌕</span>
+            <input id="home-query" type="search" placeholder="Try “tutoring” or “food assistance”">
+            <button type="submit">Search <span aria-hidden="true">→</span></button>
+          </form>
+          <p class="search-hint">Search by service, organization, program, or keyword.</p>
+          <div class="hero-quick-links" aria-label="Popular searches">
+            <span>Start with:</span>
+            <a href="resources.html?category=Education">Education</a>
+            <a href="resources.html?category=Food%20%26%20Essentials">Food assistance</a>
+            <a href="events.html">Local events</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Local places around Alpharetta and Cumming">
+          <figure class="hero-photo hero-photo-main">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Alpha_Loop%2C_Alpharetta_GA.jpg" alt="A tree-lined path along the Alpha Loop in Alpharetta">
+            <figcaption><span class="photo-pin" aria-hidden="true">●</span> Alpha Loop <span>· Alpharetta</span></figcaption>
+          </figure>
+          <figure class="hero-photo hero-photo-small">
+            <img src="https://www.cityofcumming.net/wp-content/uploads/2022/06/Aerial-2-MB.jpg" alt="Aerial view of the Cumming City Center amphitheater and green space">
+            <figcaption>Cumming City Center</figcaption>
+          </figure>
+          <div class="hero-stamp"><span>LOCAL</span><strong>Starts<br>right here.</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <p class="eyebrow">WELCOME TO YOUR COMMUNITY</p>
+      <h2>What brings you here?</h2>
+      <p>
+        Whether you need a helping hand or want to get more involved,
+        start with the path that fits you.
+      </p>
+
+      <div class="category-grid">
+        <a class="category-card" href="resources.html?category=Food%20%26%20Essentials">
+          <span class="category-icon" aria-hidden="true">♡</span>
+          <h3>Find Support</h3>
+          <p>
+            Explore food assistance, essential services, financial
+            support, and other community resources.
+          </p>
+        </a>
+
+        <a class="category-card" href="events.html">
+          <span class="category-icon" aria-hidden="true">↗</span>
+          <h3>Get Involved</h3>
+          <p>
+            Find local events, activities, volunteering, and
+            opportunities to participate.
+          </p>
+        </a>
+
+        <a class="category-card" href="resources.html">
+          <span class="category-icon" aria-hidden="true">✳</span>
+          <h3>Discover the Community</h3>
+          <p>
+            Get to know local organizations, youth programs,
+            recreation, and community services.
+          </p>
+        </a>
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A GOOD PLACE TO START</p>
+          <h2>Explore local resources</h2>
+        </div>
+        <a href="resources.html">View all resources →</a>
+      </div>
+
+      <div id="featured-resources" class="resource-grid"></div>
+    </section>
+
+    <section class="local-discover">
+      <div class="container local-discover-inner">
+        <div class="local-discover-heading">
+          <p class="eyebrow">MADE FOR THIS COMMUNITY</p>
+          <h2>Discover what's<br><span>around you.</span></h2>
+          <p>From neighborhood greenways to gathering spaces, explore the places and opportunities that make our area feel like home.</p>
+        </div>
+        <div class="local-place-grid">
+          <a class="local-place-card local-place-alpha" href="https://www.alpharetta.ga.us/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Alpha_Loop%2C_Alpharetta_GA.jpg" alt="Tree-lined walking path on the Alpha Loop in Alpharetta">
+            <span class="place-overlay"><span class="place-location">ALPHA LOOP · ALPHARETTA</span></span>
+          </a>
+          <a class="local-place-card local-place-cumming" href="https://www.cityofcumming.net/cumming-city-center" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.cityofcumming.net/wp-content/uploads/2022/06/Aerial-2-MB.jpg" alt="Cumming City Center's outdoor amphitheater and green space">
+            <span class="place-overlay"><span class="place-location">CUMMING CITY CENTER · CUMMING</span></span>
+          </a>
+          <a class="local-place-card local-place-avalon" href="https://experienceavalon.com/" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Avalon%2C%20Alpharetta%20May%202018.jpg?width=1000" alt="Avalon shopping and gathering district in Alpharetta, Georgia">
+            <span class="place-overlay"><span class="place-location">AVALON · ALPHARETTA</span></span>
+          </a>
+          <a class="local-place-card local-place-library" href="https://www.forsythpl.org/" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Little%20Free%20Library%20in%20Pooles%20Mill%20Park%2C%20Cumming%2C%20GA.jpg?width=1000" alt="Little Free Library in Poole's Mill Park in Forsyth County">
+            <span class="place-overlay"><span class="place-location">POOLE’S MILL PARK · CUMMING</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-banner">
+      <div class="container banner-content">
+        <div>
+          <p class="eyebrow">HAPPENING AROUND YOU</p>
+          <h2>There's more to community than a place on the map.</h2>
+          <p>
+            Find an upcoming event, learn something new, or discover
+            a way to contribute locally.
+          </p>
+        </div>
+        <a class="button button-light" href="events.html">
+          Explore events →
+        </a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <p class="eyebrow">HELP US GROW</p>
+      <h2>Know a resource we're missing?</h2>
+      <p>
+        Suggest an organization for our team to review and help make
+        this directory more useful to the community.
+      </p>
+
+      <form id="suggest-form" class="suggest-form">
+        <label for="suggest-name">Organization name</label>
+        <input
+          id="suggest-name"
+          name="name"
+          required
+          maxlength="120"
+        >
+
+        <label for="suggest-url">Official website</label>
+        <input
+          id="suggest-url"
+          name="url"
+          type="url"
+          required
+        >
+
+        <label for="suggest-category">Category</label>
+        <select id="suggest-category" name="category" required>
+          <option value="">Choose a category</option>
+          <option>Education</option>
+          <option>Food & Essentials</option>
+          <option>Recreation</option>
+          <option>Volunteering</option>
+        </select>
+
+        <button class="button" type="submit">Submit suggestion</button>
+        <p id="suggest-feedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand brand-footer" href="index.html"><img class="brand-logo" src="assets/commonground-tree-logo.png" alt="" width="32" height="32"><span class="brand-wordmark">Common<span>Ground</span></span></a>
+      <p>An independent student-created community directory.</p>
+      <div>
+        <a href="resources.html">Explore resources</a>
+        <a href="events.html">Community events</a>
+        <a href="saved.html">Saved resources</a>
+      </div>
+      <p class="footer-note">
+        Verify service details with each organization before visiting.
+      </p>
+      <p class="image-credit">Local photos: Alpha Loop, John Phelan (CC BY 4.0); Avalon, Thomson200 (CC0); Poole’s Mill Park Little Free Library, John Phelan (CC BY 4.0), via Wikimedia Commons; Cumming City Center, City of Cumming. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0 license</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
